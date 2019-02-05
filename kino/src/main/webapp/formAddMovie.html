@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:form="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styleToFromAddMovie.css">
+    <meta charset="UTF-8">
+    <title>Form add new movie on database</title>
+</head>
+<body>
+    <h2>Podaj dane filmu</h2>
+    <form name="movieData" method="post" id="formAddMovie" action="./addToDataBase">
+        <label id="firstLabel">Tytul</label><input type="text" name="titleMovie" placeholder="Tytul" /><br />
+        <label>Gatunek</label><input type="text" name="typeMovie" placeholder="Gatunek" /><br />
+        <label>Rok produkcji</label><input type="text" name="yearOfProductionMovie" placeholder="Rok produkcji" /><br />
+        <label>Czas trwania</label><input type="text" name="timeMovie" placeholder="Czas trwania" /><br />
+        <textarea name="discriptionMovie" form="formAddMovie" >Opis filmu</textarea><br />
+        <textarea name="castMovie" form="formAddMovie">Obsada</textarea><br />
+        <input id="ButtonSubmit" type="submit" value="Wyslij">
+    </form>
+
+
+</body>
+</html>
